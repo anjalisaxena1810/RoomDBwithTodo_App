@@ -29,18 +29,19 @@ class UpdateActivity : AppCompatActivity() {
         factory = AppViewModelFactory(AppRepository(AppDatabase.getInstance(this).appDao))
         viewModel = ViewModelProvider(this, factory)[AppViewModel::class.java]
         user = Gson().fromJson(intent.getStringExtra("USER_DATA"),User::class.java)
-//
+
 //        dateFormat = SimpleDateFormat("dd.MM.yyy")
+//
 //        date = dateFormat.format(Date())
 
 
         binding.etUpdatetitle.setText(user.Title)
         binding.etUpdateDescrip.setText(user.Description)
-
+//        binding.time2.setText("Current Date: $date Time: ")
 
         binding.btnUpdate.setOnClickListener {
             viewModel.updateData(User(user.id,binding.etUpdatetitle.text.toString(), binding.etUpdateDescrip.text.toString()))
-//                " +","Modified_At: $date"+" "+binding.time.text.toString()))
+//                "Modified_At: $date"+" "+binding.time2.text.toString()))
             Toast.makeText(this,"Record updated",Toast.LENGTH_SHORT).show()
             finish()
         }

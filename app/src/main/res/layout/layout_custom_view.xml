@@ -41,20 +41,21 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
 
-            .
 
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/descriptionView"
-                android:layout_marginLeft="134dp"
-                android:layout_marginTop="3dp"
-                android:layout_toRightOf="@+id/descriptionView"
-                android:text="Created_AT"
-                android:textColor="@color/black"
-                android:textSize="10dp"
-                android:textStyle="bold" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/time1"-->
+
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/descriptionView"-->
+<!--                android:layout_marginLeft="134dp"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:layout_toRightOf="@+id/descriptionView"-->
+<!--                android:text="Created_AT"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textStyle="bold" />-->
 
 
         </RelativeLayout>

@@ -13,10 +13,9 @@ data class User(
     @ColumnInfo(name ="TITLE")
     var Title:String,
     @ColumnInfo(name = "DESCRIPTION")
-    var Description:String,
+    var Description:String
 //    @ColumnInfo(name = "CREATED/MODIFIED_at")
-//    @TypeConverter(date?.toLong!)
-//     var date:String
+//   var  CreateAt : String
 
 
 

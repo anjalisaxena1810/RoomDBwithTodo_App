@@ -22,7 +22,7 @@ class AppRecyclerviewAdapter(private val userList: List<User>,private val onItem
             val user = userList.get(position)
             holder.layoutCustomViewBinding.TitleView.text= user.Title
             holder.layoutCustomViewBinding.descriptionView.text= user.Description
-//            holder.layoutCustomViewBinding.time .text=student.CREATED_AT
+//            holder.layoutCustomViewBinding.time1 .text= user.CreateAt
 
 
             holder.itemView.setOnClickListener {

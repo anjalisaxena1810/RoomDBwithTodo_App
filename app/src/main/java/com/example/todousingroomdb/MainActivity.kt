@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        binding.recyclerView.layoutManager = GridLayoutManager(this,2)
+        binding.recyclerView.layoutManager =LinearLayoutManager(this)
 
         viewModel.user.observe(this, Observer {
             val adapter = AppRecyclerviewAdapter(it, object:OnItemClickListener{
